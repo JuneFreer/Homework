@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 public class ScissorRockPaper{
     public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); // use this statement to create Scanner object
         int comp = (int)(Math.random() * 3);
         System.out.print("Please enter scissor, rock or paper:  ");
-        String user = input.nextLine().toUpperCase();
+        String user = input.nextLine().toUpperCase(); // we don't use args[], because we get user's input during the program process
+        // we use nextLine() instead of next() method, because nextLine() can get empty input
         
         switch(user){
             case "SCISSOR":
