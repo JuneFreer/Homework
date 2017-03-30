@@ -1,6 +1,6 @@
 public class Grade{
     public static void main(String[] args){
-        String grade = args[0];
+        String grade = args[0].toUpperCase();
         switch(grade){
             case "H":
                 System.out.println("[85, 100]");
@@ -19,6 +19,7 @@ public class Grade{
                 break;
             default:
                 System.out.println("You did not enter a valid value!");
+                break;
         }
     }
 }
